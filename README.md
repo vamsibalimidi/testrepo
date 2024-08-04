@@ -7,6 +7,8 @@
 ### zoxide - https://github.com/ajeetdsouza/zoxide
 
 ### oh-my-posh: https://ohmyposh.dev/
+1. Make sure to install Nerd Fonts as suggested in the website.
+2. Make sure the terminal settings are changed to use the Nerd Font that you installed
 
 ### ‘bat’ instead of ‘cat’: https://www.linode.com/docs/guides/how-to-install-and-use-the-bat-command-on-linux/
 

@@ -36,6 +36,13 @@
 
    1. Install cscope plugin:
 
+### Stow
+
+1. Install Stow to help with symlinking the config files.
+2. https://www.youtube.com/watch?v=y6XCebnB9gs&t=381s
+
+### Managing your dotfiles
+
 ### Other Links:
 
 1. Git Integration: https://medium.com/@shaikzahid0713/git-integration-in-neovim-a6f26c424b58

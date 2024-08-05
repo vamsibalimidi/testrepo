@@ -4,12 +4,14 @@
 
 ## ITerm2: https://iterm2.com/ (Mac)
 
-## zoxide - https://github.com/ajeetdsouza/zoxide
-1. Use zoxide instead of 'cd'
+## zoxide
+1. https://github.com/ajeetdsouza/zoxide
+2. Use zoxide instead of 'cd'
 
-## oh-my-posh: https://ohmyposh.dev/
-1. Make sure to install Nerd Fonts as suggested in the website.
-2. Make sure the terminal settings are changed to use the Nerd Font that you installed
+## oh-my-posh:
+1. https://ohmyposh.dev/
+2. Make sure to install Nerd Fonts as suggested in the website.
+3. Make sure the terminal settings are changed to use the Nerd Font that you installed
 
 ## ‘bat’ instead of ‘cat’: 
 1. https://www.linode.com/docs/guides/how-to-install-and-use-the-bat-command-on-linux/

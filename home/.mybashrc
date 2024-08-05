@@ -34,7 +34,8 @@ if [[ -z "${OH_MY_POSH_DIR}" ]]; then
   echo "Skipping oh-my-posh setup. Make sure OH_MY_POSH_DIR environment variable is set"
   eval "$(oh-my-posh init bash)"
 else
-  eval "$(oh-my-posh init bash --config $OH_MY_POSH_DIR/iterm2.omp.json)"
+#  eval "$(oh-my-posh init bash --config $OH_MY_POSH_DIR/iterm2.omp.json)"
+  eval "$(oh-my-posh init bash --config ~/my_iterm2.omp.json)"
 fi
 
 

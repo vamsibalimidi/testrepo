@@ -2,13 +2,14 @@
 
 # Dev Environment:
 
-## ITerm2: https://iterm2.com/ (Mac)
+## ITerm2: Terminal
+1. https://iterm2.com/ (Mac)
 
-## zoxide
+## zoxide: Use instead of 'cd'
 1. https://github.com/ajeetdsouza/zoxide
 2. Use zoxide instead of 'cd'
 
-## oh-my-posh:
+## oh-my-posh: Customize your prompt
 1. https://ohmyposh.dev/
 2. Make sure to install Nerd Fonts as suggested in the website.
 3. Make sure the terminal settings are changed to use the Nerd Font that you installed
@@ -16,10 +17,11 @@
 ## ‘bat’ instead of ‘cat’: 
 1. https://www.linode.com/docs/guides/how-to-install-and-use-the-bat-command-on-linux/
 
-## fzf - fuzzy finder. Eg: alias | fzf,
+## fzf - fuzzy finder
 1. https://youtu.be/aLMepxvUj4s?si=5w5mZ6Xuc8bSy-CD
 2. https://youtu.be/KZSjtH2jbIE?si=Yt6I11Fup-wZ6wv2
 3. Advanced: https://github.com/junegunn/fzf/blob/master/ADVANCED.md
+4. https://jira.broadcom.net/browse/FOS-859928
 
 ## TMux
 1. Install as non-root: https://gist.github.com/smsharma/0003b61a571cab63ad80

@@ -26,31 +26,6 @@ eval "$(zoxide init bash)"
 #eval "$(~/bin/oh-my-posh init bash --config ~/.cache/oh-my-posh/themes/easy-term.omp.json)"
 #
 
-if [[ -z "${OH_MY_POSH_DIR}" ]]; then
-  echo "Skipping oh-my-posh setup. Make sure OH_MY_POSH_DIR environment variable is set"
-  eval "$(oh-my-posh init bash)"
-else
-#  eval "$(oh-my-posh init bash --config $OH_MY_POSH_DIR/iterm2.omp.json)"
-  eval "$(oh-my-posh init bash --config ~/my_iterm2.omp.json)"
-fi
-
-
-#eval "$(~/bin/oh-my-posh init bash --config ~/.mytheme.omp.json)"
-
-case "$TERM" in
-    xterm)
-        color_prompt=yes
-        ;;
-    screen)
-        color_prompt=yes
-        ;;
-    *256*) 
-        color_prompt=yes
-        ;;
-esac
-
-force_color_prompt=yes
-
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$HOME/local/lib
 
 FZF_DEFAULT_OPTS='--color=bg+:#293739,bg:#1B1D1E,border:#808080,spinner:#E6DB74,hl:#7E8E91,fg:#F8F8F2,header:#7E8E91,info:#A6E22E,pointer:#A6E22E,marker:#F92672,fg+:#F8F8F2,prompt:#F92672,hl+:#F92672'

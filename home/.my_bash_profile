@@ -1,0 +1,34 @@
+#
+# Set prompt using oh-my-posh
+#
+if [[ -z "${OH_MY_POSH_DIR}" ]]; then
+  echo "Skipping oh-my-posh setup. Make sure OH_MY_POSH_DIR environment variable is set"
+  eval "$(oh-my-posh init bash)"
+else
+    if [[ -z "${SSH_CONNECTION}" ]]; then
+     echo "Not SSH"
+        eval "$(oh-my-posh init bash --config $OH_MY_POSH_DIR/jandedobbeleer.omp.json)"
+    else
+    echo "SSH"
+        eval "$(oh-my-posh init bash --config ~/my_iterm2.omp.json)"
+    fi
+fi
+
+
+
+#eval "$(~/bin/oh-my-posh init bash --config ~/.mytheme.omp.json)"
+
+case "$TERM" in
+    xterm)
+        color_prompt=yes
+        ;;
+    screen)
+        color_prompt=yes
+        ;;
+    *256*) 
+        color_prompt=yes
+        ;;
+esac
+
+force_color_prompt=yes
+

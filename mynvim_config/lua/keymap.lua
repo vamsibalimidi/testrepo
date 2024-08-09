@@ -1,4 +1,4 @@
-print("keymap.lua")
+print("lua/keymap.lua")
 vim.g.test_data = vim.fn.stdpath "data"
 print("test data" .. vim.g.test_data)
 

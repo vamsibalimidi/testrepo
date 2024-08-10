@@ -85,6 +85,7 @@ local plugins = {
 		"nvim-lualine/lualine.nvim",
 		dependencies = { "nvim-tree/nvim-web-devicons" },
 	},
+	require('custom.plugins.bufferline'),
 
 }
 
@@ -116,7 +117,6 @@ require("mason").setup()
 require("mason-lspconfig").setup({
 	ensure_installed = { "lua_ls", "clangd", "rust_analyzer" },
 })
-require("custom.plugins.bufferline")
 require("lspconfig").lua_ls.setup({})
 require("lspconfig").rust_analyzer.setup({})
 require("lspconfig").clangd.setup({})

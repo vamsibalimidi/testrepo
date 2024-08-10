@@ -85,7 +85,7 @@ local plugins = {
 		"nvim-lualine/lualine.nvim",
 		dependencies = { "nvim-tree/nvim-web-devicons" },
 	},
-	require('custom.plugins.bufferline'),
+	{ import = "custom.plugins" },
 
 }
 
@@ -168,6 +168,8 @@ tsitter.setup({
 
 -- Set Colorschem
 vim.cmd.colorscheme("catppuccin-macchiato")
+
+require "custom.keymaps.mykeymaps"
 
 -- require("format")
 -- require("keymap")

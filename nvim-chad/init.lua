@@ -33,8 +33,8 @@ dofile(vim.g.base46_cache .. "statusline")
 require "options"
 require "nvchad.autocmds"
 require "nvchad.mappings"
-require "custom.keymaps.mykeymaps"
 
 vim.schedule(function()
   require "mappings"
 end)
+require "custom.keymaps.mykeymaps"

@@ -52,5 +52,6 @@ alias s='grep -rn'
 alias st='stow'
 alias sti='stow -t ~/'
 alias stx='stow -t ~/ -D'
+alias tw='tmux new-window -n '
 alias vi='vim'
 echo "------------------------------------------------------------------------------"

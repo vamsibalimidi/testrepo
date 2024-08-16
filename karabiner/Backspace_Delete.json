@@ -1,0 +1,47 @@
+{
+  "description": "Backspace/Delete Modifiers. Change Ctrl+j for Backspace, Ctrl+l for delete, Shift to perform operation on words",
+  "manipulators": [
+    {
+      "from": {
+        "key_code": "j",
+        "modifiers": { "mandatory": ["left_control"] }
+      },
+      "to": [{ "key_code": "delete_or_backspace" }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "key_code": "l",
+        "modifiers": { "mandatory": ["left_control"] }
+      },
+      "to": [{ "key_code": "delete_forward" }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "key_code": "j",
+        "modifiers": { "mandatory": ["left_control", "shift"] }
+      },
+      "to": [
+        {
+          "key_code": "delete_or_backspace",
+          "modifiers": "left_option"
+        }
+      ],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "key_code": "l",
+        "modifiers": { "mandatory": ["left_control", "shift"] }
+      },
+      "to": [
+        {
+          "key_code": "delete_forward",
+          "modifiers": "left_option"
+        }
+      ],
+      "type": "basic"
+    }
+  ]
+}

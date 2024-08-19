@@ -43,19 +43,6 @@ local plugins = {
 	{ "tpope/vim-fugitive" },
 	{ "f-person/git-blame.nvim" },
 	{
-		"dhananjaylatkar/cscope_maps.nvim",
-		dependencies = {
-			"folke/which-key.nvim", -- optional [for whichkey hints]
-			"nvim-telescope/telescope.nvim", -- optional [for picker="telescope"]
-			"ibhagwan/fzf-lua", -- optional [for picker="fzf-lua"]
-			"nvim-tree/nvim-web-devicons", -- optional [for devicons in telescope or fzf]
-		},
-		opts = {
-			-- USE EMPTY FOR DEFAULT OPTIONS
-			-- DEFAULTS ARE LISTED BELOW
-		},
-	},
-	{
 		"williamboman/mason.nvim",
 		"williamboman/mason-lspconfig.nvim",
 		"neovim/nvim-lspconfig",
@@ -86,7 +73,6 @@ local plugins = {
 		dependencies = { "nvim-tree/nvim-web-devicons" },
 	},
 	{ import = "custom.plugins" },
-
 }
 
 local opts = {
@@ -112,7 +98,6 @@ local opts = {
 }
 
 require("lazy").setup(plugins, opts)
-require("cscope_maps").setup()
 require("mason").setup()
 require("mason-lspconfig").setup({
 	ensure_installed = { "lua_ls", "clangd", "rust_analyzer" },
@@ -169,7 +154,8 @@ tsitter.setup({
 -- Set Colorschem
 vim.cmd.colorscheme("catppuccin-macchiato")
 
-require "custom.keymaps.mykeymaps"
+require("custom.keymaps.mykeymaps")
+require("custom.keymaps.options")
 
 -- require("format")
 -- require("keymap")

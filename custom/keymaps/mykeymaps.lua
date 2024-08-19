@@ -33,8 +33,21 @@ map("n", ";", ":", { desc = "CMD enter command mode" })
 map("i", "kk", "<ESC>")
 
 -- Key mapping fos bufferline
-vim.keymap.set("n", "<C-,>", "<cmd>BufferLineCycleNext<cr>", {})
-vim.keymap.set("n", "<C-.>", "<cmd>BufferLineCyclePrev<cr>", {})
+
+if os.getenv("NVIM_APPNAME") == "nvim-chad" then
+	-- move buffer right
+	vim.keymap.set("n", "<C-,>", function()
+		require("nvchad.tabufline").prev()
+	end, { desc = "Move to previous tab" })
+
+	-- move buffer left
+	vim.keymap.set("n", "<C-.>", function()
+		require("nvchad.tabufline").next()
+	end, { desc = "Move to next tab" })
+else
+	vim.keymap.set("n", "<C-.>", "<cmd>BufferLineCycleNext<cr>", {})
+	vim.keymap.set("n", "<C-,>", "<cmd>BufferLineCyclePrev<cr>", {})
+end
 
 -- Enable Telescope extensions if they are installed
 pcall(require("telescope").load_extension, "fzf")
@@ -73,7 +86,5 @@ end, { desc = "[S]earch [/] in Open Files" })
 
 -- Shortcut for searching your Neovim configuration files
 vim.keymap.set("n", "<leader>sn", function()
-	builtin.find_files(
-    { cwd = vim.fn.stdpath("config")
-    })
+	builtin.find_files({ cwd = vim.fn.stdpath("config") })
 end, { desc = "[S]earch [N]eovim files" })

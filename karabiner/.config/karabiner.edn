@@ -1,0 +1,29 @@
+{
+; :simlayers {
+;             :d-mode {:key :left_control}
+;             }
+
+ :layers {
+          :s-mode {:key :caps_lock}
+;          :d-mode {:key :left_control}
+          }
+
+ :main [
+        {:des "s-layer: Cursor Movement ijkl"
+         :rules [:s-mode
+                 [:##i :up_arrow]
+                 [:##j :left_arrow]
+                 [:##k :down_arrow]
+                 [:##l :right_arrow]
+                 ]
+         }
+        {:des "d-layer: Delete ijkl"
+         :rules [;:d-mode
+                 [:!C##j :delete_or_backspace]
+                 [:!C##l :delete_forward]]
+         }
+        {:des "Ctrl+k  Return/Enter",
+         :rules [[:!Tk :return_or_enter]]
+         }
+        ]
+ }

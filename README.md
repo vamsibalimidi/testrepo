@@ -53,3 +53,5 @@
 ## Other Tools:
 1. HTTPie - for curl useful for JSON responses.
 2. jq - for JSON parsing
+3. Karabiner
+4. Goku - https://github.com/yqrashawn/GokuRakuJoudo, https://github.com/yqrashawn/yqdotfiles/blob/master/modules/yqrashawn/home-manager/dotfiles/karabiner.edn, https://github.com/yqrashawn/yqdotfiles/blob/1e240bd89083ad8f4ef010aabc9b346a95d95af5/.config/karabiner.edn#L500

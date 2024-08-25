@@ -14,7 +14,7 @@
 2. Make sure to install Nerd Fonts as suggested in the website.
 3. Make sure the terminal settings are changed to use the Nerd Font that you installed
 
-## ‘bat’ instead of ‘cat’: 
+## ‘bat’ instead of ‘cat’:
 1. https://www.linode.com/docs/guides/how-to-install-and-use-the-bat-command-on-linux/
 
 ## fzf - fuzzy finder
@@ -53,5 +53,8 @@
 ## Other Tools:
 1. HTTPie - for curl useful for JSON responses.
 2. jq - for JSON parsing
-3. Karabiner
-4. Goku - https://github.com/yqrashawn/GokuRakuJoudo, https://github.com/yqrashawn/yqdotfiles/blob/master/modules/yqrashawn/home-manager/dotfiles/karabiner.edn, https://github.com/yqrashawn/yqdotfiles/blob/1e240bd89083ad8f4ef010aabc9b346a95d95af5/.config/karabiner.edn#L500
+3. Karabiner for keybindings: https://karabiner-elements.pqrs.org
+4. Use "Goku" for managing the Karabiner keybindings:
+   1. Learn about Goku:https://github.com/yqrashawn/GokuRakuJoudo,
+   2. Example 1: https://github.com/yqrashawn/yqdotfiles/blob/master/modules/yqrashawn/home-manager/dotfiles/karabiner.edn,
+   3. Example 2: 🚶https://github.com/yqrashawn/yqdotfiles/blob/1e240bd89083ad8f4ef010aabc9b346a95d95af5/.config/karabiner.edn#L500

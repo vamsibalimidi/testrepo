@@ -18,10 +18,6 @@ vim.keymap.set("n", "<leader>fg", tel.live_grep, {})
 
 vim.keymap.set("n", "m", ":map<cr>")
 
--- NewTree
--- vim.keymap.set("n", "<C-n>", ":Neotree filesystem toggle<CR>")
--- vim.keymap.set("n", "<leader>gs", ":Neotree float git_status<CR>")
-
 -- LSP
 vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
 vim.keymap.set("n", "gdK", vim.lsp.buf.definition, {})
@@ -47,6 +43,10 @@ if os.getenv("NVIM_APPNAME") == "nvim-chad" then
 else
 	vim.keymap.set("n", "<C-.>", "<cmd>BufferLineCycleNext<cr>", {})
 	vim.keymap.set("n", "<C-,>", "<cmd>BufferLineCyclePrev<cr>", {})
+
+	-- NewTree
+	vim.keymap.set("n", "<C-n>", ":Neotree filesystem toggle<CR>")
+	vim.keymap.set("n", "<leader>gs", ":Neotree float git_status<CR>")
 end
 
 -- Enable Telescope extensions if they are installed

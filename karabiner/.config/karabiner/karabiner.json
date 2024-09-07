@@ -29,6 +29,26 @@
           "to_if_alone" : [ {
             "key_code" : "caps_lock"
           } ]
+        }, {
+          "type" : "basic",
+          "to" : [ {
+            "set_variable" : {
+              "name" : "tab-mode",
+              "value" : 1
+            }
+          } ],
+          "from" : {
+            "key_code" : "tab"
+          },
+          "to_after_key_up" : [ {
+            "set_variable" : {
+              "name" : "tab-mode",
+              "value" : 0
+            }
+          } ],
+          "to_if_alone" : [ {
+            "key_code" : "tab"
+          } ]
         } ]
       }, {
         "description" : "caps-layer: Cursor Movement ijkl",
@@ -121,6 +141,57 @@
           },
           "to" : [ {
             "key_code" : "delete_forward"
+          } ],
+          "type" : "basic"
+        } ]
+      }, {
+        "description" : "tab-mode: k -> return-or-enter",
+        "manipulators" : [ {
+          "from" : {
+            "key_code" : "k",
+            "modifiers" : {
+              "optional" : [ "any" ]
+            }
+          },
+          "to" : [ {
+            "key_code" : "return_or_enter"
+          } ],
+          "conditions" : [ {
+            "name" : "tab-mode",
+            "value" : 1,
+            "type" : "variable_if"
+          } ],
+          "type" : "basic"
+        }, {
+          "from" : {
+            "key_code" : "j",
+            "modifiers" : {
+              "optional" : [ "any" ]
+            }
+          },
+          "to" : [ {
+            "key_code" : "delete_or_backspace"
+          } ],
+          "conditions" : [ {
+            "name" : "tab-mode",
+            "value" : 1,
+            "type" : "variable_if"
+          } ],
+          "type" : "basic"
+        }, {
+          "from" : {
+            "key_code" : "l",
+            "modifiers" : {
+              "optional" : [ "any" ]
+            }
+          },
+          "to" : [ {
+            "key_code" : "delete_forward"
+          } ],
+          "conditions" : [ {
+            "name" : "tab-mode",
+            "value" : 1,
+            "type" : "variable_if"
           } ],
           "type" : "basic"
         } ]

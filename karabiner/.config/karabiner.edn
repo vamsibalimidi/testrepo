@@ -19,7 +19,7 @@
                  [:##l :delete_forward]
                  ]},
         {:des "Ctrl+k  Return/Enter",
-         :rules [[:!Tk :return_or_enter]]}]}
+         :rules [[:!T##k :return_or_enter]]}]}
 ;{
 ;; :simlayers {
 ;             :d-mode {:key :left_control}

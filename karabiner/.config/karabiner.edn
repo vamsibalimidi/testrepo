@@ -1,6 +1,7 @@
 {
  ;:simlayers {:d-mode {:key :left_control}},
- :layers {:caps-mode {:key :caps_lock}},
+ :layers {:caps-mode {:key :caps_lock}
+          :tab-mode  {:key :tab}},
  :main [{:des "caps-layer: Cursor Movement ijkl"
          :rules [:caps-mode
                  [:##i :up_arrow]
@@ -11,6 +12,12 @@
          :rules [;:d-mode
                  [:!T##j :delete_or_backspace]
                  [:!T##l :delete_forward]]},
+        {:des "tab-mode: k -> return-or-enter",
+         :rules [:tab-mode
+                 [:##k :return_or_enter]
+                 [:##j :delete_or_backspace]
+                 [:##l :delete_forward]
+                 ]},
         {:des "Ctrl+k  Return/Enter",
          :rules [[:!Tk :return_or_enter]]}]}
 ;{

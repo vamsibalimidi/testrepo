@@ -1,6 +1,12 @@
+# shell environment variables set by 'brew'
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
 #
 # Set prompt using oh-my-posh
 #
+unset OH_MY_POSH_DIR
+export OH_MY_POSH_DIR="$(/opt/homebrew/bin/brew --prefix oh-my-posh)/themes"
+
 if [[ -z "${OH_MY_POSH_DIR}" ]]; then
   echo "Skipping oh-my-posh setup. Make sure OH_MY_POSH_DIR environment variable is set"
   eval "$(oh-my-posh init bash)"

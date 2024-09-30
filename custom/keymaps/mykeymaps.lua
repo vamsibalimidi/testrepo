@@ -32,17 +32,17 @@ map("i", "kk", "<ESC>")
 
 if os.getenv("NVIM_APPNAME") == "nvim-chad" then
 	-- move buffer right
-	vim.keymap.set("n", "<C-,>", function()
+	vim.keymap.set("n", "<F8>", function()
 		require("nvchad.tabufline").prev()
 	end, { desc = "Move to previous tab" })
 
 	-- move buffer left
-	vim.keymap.set("n", "<C-.>", function()
+	vim.keymap.set("n", "<F9>", function()
 		require("nvchad.tabufline").next()
 	end, { desc = "Move to next tab" })
 else
-	vim.keymap.set("n", "<C-.>", "<cmd>BufferLineCycleNext<cr>", {})
-	vim.keymap.set("n", "<C-,>", "<cmd>BufferLineCyclePrev<cr>", {})
+	vim.keymap.set("n", "<F9>", "<cmd>BufferLineCycleNext<cr>", {})
+	vim.keymap.set("n", "<F8>", "<cmd>BufferLineCyclePrev<cr>", {})
 
 	-- NewTree
 	vim.keymap.set("n", "<C-n>", ":Neotree filesystem toggle<CR>")

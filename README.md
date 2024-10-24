@@ -17,6 +17,9 @@
 ## ‘bat’ instead of ‘cat’:
 1. https://www.linode.com/docs/guides/how-to-install-and-use-the-bat-command-on-linux/
 
+## ‘rg’ instead of ‘grep’:
+1. [https://www.linode.com/docs/guides/how-to-install-and-use-the-bat-command-on-linux/](https://github.com/BurntSushi/ripgrep)
+
 ## fzf - fuzzy finder
 1. https://youtu.be/aLMepxvUj4s?si=5w5mZ6Xuc8bSy-CD
 2. https://youtu.be/KZSjtH2jbIE?si=Yt6I11Fup-wZ6wv2

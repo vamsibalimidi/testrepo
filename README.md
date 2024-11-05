@@ -31,6 +31,7 @@
 2. https://www.runrails.com/tmux/scrolling-in-tmux/
 3. Browse through links in https://arcolinux.com/everthing-you-need-to-know-about-tmux-servers-and-sessions/
 4. https://github.com/tmux/tmux/wiki/FAQ
+5. https://tmuxcheatsheet.com/
 
 ## NVIM
 1. Install Neovim as non-root: https://www.reddit.com/r/neovim/comments/s92klr/install_without_root_access/

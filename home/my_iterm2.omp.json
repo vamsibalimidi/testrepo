@@ -20,7 +20,7 @@
           "foreground": "#d2ff5e",
           "powerline_symbol": "\ue0b0",
           "style": "powerline",
-          "template": " {{ if .SSHSession }}\ueba9 {{ end }}{{ .HostName }} ",
+          "template": " {{ if .SSHSession }}\ueba9 {{ end }}{{ .Env.MYHOST }} ",
           "type": "session"
         },
         {

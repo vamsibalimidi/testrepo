@@ -32,6 +32,7 @@
 3. Browse through links in https://arcolinux.com/everthing-you-need-to-know-about-tmux-servers-and-sessions/
 4. https://github.com/tmux/tmux/wiki/FAQ
 5. https://tmuxcheatsheet.com/
+6. Resize Panes: :resize-pane -D 10. Use <D | U | L | R> for direction
 
 ## NVIM
 1. Install Neovim as non-root: https://www.reddit.com/r/neovim/comments/s92klr/install_without_root_access/

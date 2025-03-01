@@ -50,6 +50,7 @@
 2. https://www.youtube.com/watch?v=y6XCebnB9gs&t=381s
 
 ## Managing your dotfiles
+1. Very good resource with links: https://dotfiles.github.io/tutorials/
 
 ## Other Links:
 1. Git Integration: https://medium.com/@shaikzahid0713/git-integration-in-neovim-a6f26c424b58

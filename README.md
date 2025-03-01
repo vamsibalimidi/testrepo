@@ -53,7 +53,7 @@
 1. Very good resource with links: https://dotfiles.github.io/tutorials/
 
 ## Github
-[Managing Multiple Profiles](./README.github.md)
+[Using Git](./README.github.md)
 
 
 ## Other Links:

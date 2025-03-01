@@ -52,6 +52,10 @@
 ## Managing your dotfiles
 1. Very good resource with links: https://dotfiles.github.io/tutorials/
 
+## Github
+[Managing Multiple Profiles](./README.github.md)
+
+
 ## Other Links:
 1. Git Integration: https://medium.com/@shaikzahid0713/git-integration-in-neovim-a6f26c424b58
 2. https://github.com/junegunn/fzf-git.sh/blob/main/fzf-git.sh
